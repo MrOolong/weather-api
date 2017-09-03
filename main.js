@@ -11,8 +11,8 @@ jQuery(document).ready(function($) {
 });
 
 
-  if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    $("#geo_check").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
-  });
-}
+//   if (navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(function(position) {
+//     $("#geo_check").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+//   });
+// }
