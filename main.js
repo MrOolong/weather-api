@@ -1,7 +1,25 @@
-//create function to convert degrees in F to C
-function celciusConverter(){
-  //[°C] = ([°F] - 32) × 5/9
-};
+
+window.onload = getLocation();
+var x = document.getElementById("geo_check");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+
+//***create function to convert degrees in F to C***
+// function celciusConverter(){
+//   //value displayed
+//   //[°C] = ([°F] - 32) × 5/9
+//   //[°F] = [°C] × 9/5 + 32
+//   //change value displayed
+// };
 
 
 // jQuery(document).ready(function($) {
