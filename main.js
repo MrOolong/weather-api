@@ -13,13 +13,16 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude; 
 }
 
+var url = "https://fcc-weather-api.glitch.me/api/current?=" + showPosition + "&format=json&callback=?";
+
 //***create function to convert degrees in F to C***
-// function celciusConverter(){
+function celciusConverter(){
 //   //value displayed
+
 //   //[°C] = ([°F] - 32) × 5/9
 //   //[°F] = [°C] × 9/5 + 32
 //   //change value displayed
-// };
+};
 
 
 // jQuery(document).ready(function($) {
